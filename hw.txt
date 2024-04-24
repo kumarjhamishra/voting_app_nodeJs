@@ -1,0 +1,4 @@
+1- admin is able to update or not?
+2- admin is able to delete or not?
+3 - logic to allow only 1 admin
+4 - make route to get the list of candidates
