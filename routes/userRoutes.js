@@ -22,7 +22,7 @@ router.post('/signup', async(req, res) => {
         }
 
         //checking if the user already exists by it's aadhar number
-        const userAlreadyExist = await User.findOne({aadharCardNumber: data.aadharCardNumbe});
+        const userAlreadyExist = await User.findOne({aadharCardNumber: data.aadharCardNumber});
         if(userAlreadyExist){
             return res.status(400).json({error: 'User with same aadhar card number already exists'});
 
